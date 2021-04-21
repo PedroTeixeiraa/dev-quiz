@@ -29,34 +29,7 @@ class HomeController {
   void getQuizzes() async {
     state = HomeState.loading;
     await Future.delayed(Duration(seconds: 2));
-    quizzes = [
-      QuizModel(
-        title: "NLW 5 Flutter",
-        image: AppImages.blocks,
-        level: Level.facil,
-        questionAnswered: 1,
-        questions: [
-          QuestionModel(
-            title: "Está curtindo o Flutter?",
-            answers: [
-              AnswerModel(title: "Estou curtindo"),
-              AnswerModel(title: "Amando o Flutter"),
-              AnswerModel(title: "Muito top"),
-              AnswerModel(title: "Show de bola!", isRight: true),
-            ],
-          ),
-          QuestionModel(
-            title: "Está curtindo o Flutter?",
-            answers: [
-              AnswerModel(title: "Estou curtindo"),
-              AnswerModel(title: "Amando o Flutter"),
-              AnswerModel(title: "Muito top"),
-              AnswerModel(title: "Show de bola!", isRight: true),
-            ],
-          ),
-        ],
-      )
-    ];
+    quizzes = [];
     state = HomeState.success;
   }
 }
