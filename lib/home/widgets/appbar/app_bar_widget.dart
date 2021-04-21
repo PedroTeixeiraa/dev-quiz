@@ -19,30 +19,36 @@ class AppBarWidget extends PreferredSize {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text.rich(TextSpan(
+                        Text.rich(
+                          TextSpan(
                             text: "Olá, ",
                             style: AppTextStyles.title,
                             children: [
                               TextSpan(
                                   text: "Pedro Alves!",
-                                  style: AppTextStyles.titleBold)
-                            ])),
+                                  style: AppTextStyles.titleBold),
+                            ],
+                          ),
+                        ),
                         Container(
                           height: 58,
                           width: 58,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: DecorationImage(
-                                image: NetworkImage(
-                                    "https://avatars.githubusercontent.com/u/54821438?v=4"),
-                                fit: BoxFit.cover,
-                              )),
-                        )
+                            borderRadius: BorderRadius.circular(10),
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  "https://avatars.githubusercontent.com/u/54821438?v=4"),
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   ),
                   Align(
-                      alignment: Alignment(0.0, 1.0), child: ScoreCardWidget())
+                    alignment: Alignment(0.0, 1.0),
+                    child: ScoreCardWidget(),
+                  ),
                 ],
               ),
             ));
