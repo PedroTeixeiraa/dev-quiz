@@ -16,11 +16,11 @@ class QuestionIndicatorWidget extends StatelessWidget {
             children: [
               Text(
                 "Questão 04",
-                style: AppTextStyles.body20,
+                style: AppTextStyles.body,
               ),
               Text(
                 "de 10",
-                style: AppTextStyles.body20,
+                style: AppTextStyles.body,
               ),
             ],
           ),
